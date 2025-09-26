@@ -1,18 +1,16 @@
-#include<iostream>
-#include<numeric>
+#include <iostream>
+#include <numeric>
 
-using namespace std;
+using ull = unsigned long long;
 
-unsigned long long GetGcd(unsigned long long n1, unsigned long long n2)
-{
-    return gcd(n1, n2);
+ull get_gcd(ull lhs, ull rhs) {
+    return std::gcd(lhs, rhs);
 }
 
-int main()
-{
-    unsigned long long n1, n2;
-    cin >> n1 >> n2;
+int main() {
+    ull lhs, rhs;
+    std::cin >> lhs >> rhs;
 
-    cout << GetGcd(n1, n2);
+    std::cout << get_gcd(lhs, rhs);
     return 0;
 }
